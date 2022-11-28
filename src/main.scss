@@ -1,0 +1,22 @@
+@import './fonts/fonts.scss';
+@import './scss/vendor';
+
+$font-size: 1rem;
+$font-color: lch(28 99 35);
+
+html {
+  font-family: 'Roboto', serif;
+  font-size: $font-size;
+  color: $font-color;
+}
+
+.logo1 {
+  width: 10em;
+}
+.logo2 {
+  width: 10em;
+}
+
+.h1 {
+  color: red;
+}

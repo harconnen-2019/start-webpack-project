@@ -1,0 +1,23 @@
+doctype html
+html(lang= 'ru')
+    head
+        meta(charset='utf-8')
+        meta(name="viewport" content="width=device-width, user-scalable=no, " +
+        "initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        title= 'Быстрый запуск Webpack'
+        link(href=require('./main.scss') rel='stylesheet')
+
+    body
+        include includes/header
+        h1 Проект собран на Webpack
+        p Файл откомпилирован шаблонизатором Pug https://habr.com/ru/post/701724/
+
+        .logo-png
+            img.logo1(src=require('./images/image.png') alt='Загрузка PNG изображений с помощью Webpack')
+        .logo-svg
+            img.logo2(src=require('./images/logo.svg'), alt='Загрузка SVG изображений с помощью Webpack')
+
+        include:markdown-it content/article.md
+        #root
+        include includes/footer
+        script(src=require('./index.js'))
